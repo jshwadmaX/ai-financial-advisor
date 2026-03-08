@@ -1,0 +1,109 @@
+/* AI Financial Advisor - Custom Styles */
+
+/* Main background */
+.stApp {
+    background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #1a1a2e 0%, #0d1117 100%);
+    border-right: 1px solid #2d2d4e;
+}
+
+/* Cards / containers */
+[data-testid="stMetric"] {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 16px;
+    backdrop-filter: blur(10px);
+}
+
+/* Buttons */
+.stButton>button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.stButton>button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Chat messages */
+[data-testid="stChatMessage"] {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    margin: 8px 0;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Tabs */
+[data-baseweb="tab"] {
+    color: #aaa;
+}
+
+[aria-selected="true"] {
+    color: #667eea !important;
+    border-bottom: 2px solid #667eea !important;
+}
+
+/* Success/Warning/Error boxes */
+.stSuccess {
+    background: rgba(0, 200, 83, 0.1);
+    border-left: 4px solid #00C853;
+    border-radius: 8px;
+}
+
+.stWarning {
+    background: rgba(255, 109, 0, 0.1);
+    border-left: 4px solid #FF6D00;
+    border-radius: 8px;
+}
+
+.stError {
+    background: rgba(213, 0, 0, 0.1);
+    border-left: 4px solid #D50000;
+    border-radius: 8px;
+}
+
+/* Input fields */
+.stNumberInput input,
+.stSelectbox select,
+.stSlider {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 8px !important;
+    color: white !important;
+}
+
+/* Divider */
+hr {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #667eea;
+}
